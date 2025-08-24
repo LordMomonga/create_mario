@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Mario_game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      user-select: none;
+    }
+    html, body {
+    touch-action: manipulation;
+  }
+  body {
+      font-family: 'Play', sans-serif;
+    }
+
+  </style>
+
+</head>
+<body class="bg-gray-700 text-white min-h-screen flex flex-col overflow-auto">
+
+  <!-- Header -->
+  <header class="w-full bg-white text-black px-6 py-4 flex flex-col md:flex-row justify-between items-center shadow-md">
+    <a href="" class="text-2xl font-bold mb-2 md:mb-0 hover:text-blue-600 transition duration-300">M_WORLD</a>
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+      <span class="text-sm text-gray-600">Follow me on:</span>
+      <div class="flex space-x-3">
+        <a href="https://www.tiktok.com/@samuelkamisi?is_from_webapp=1&sender_device=pc"><img src="./assets/icon/tik.png" alt="TikTok" class="h-6 w-6 hover:scale-110 transition-transform"/></a>
+
+        <a href="https://www.youtube.com/@SamuelKamisi"><img src="./assets/icon/you.png" alt="YouTube" class="h-6 w-6 hover:scale-110 transition-transform"/></a>
+        <a href="#"><img src="./assets/icon/whats.png" alt="WhatsApp" class="h-6 w-6 hover:scale-110 transition-transform"/></a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Title -->
+  <h1 class="text-3xl md:text-4xl font-bold text-center my-6">Mario Game</h1>
+
+  <div class="flex-grow flex justify-center items-start px-4 py-6">
+    <div class="w-full max-w-screen-xl">
+      <canvas
+        class="  md:w-full h-[400px] sm:h-[650px] md:h-auto md:aspect-[1700/576] max-h-screen border-4 border-white rounded-lg shadow-lg"
+      ></canvas>
+    </div>
+  </div>
+
+  <!-- Mobile Controls -->
+<div class="fixed bottom-4 left-0 right-0 flex justify-center items-center space-x-4 md:hidden z-50">
+  <button style="user-select: none;" id="left" class="bg-white text-black p-4 rounded-full shadow-md hover:bg-gray-200">
+    ⬅️
+  </button>
+  <button style="user-select: none;" id="jump" class="bg-white text-black p-4 rounded-full shadow-md hover:bg-gray-200">
+    ⬆️
+  </button>
+  
+  <button style="user-select: none;" id="right" class="bg-white text-black p-4 rounded-full shadow-md hover:bg-gray-200">
+    ➡️
+  </button>
+  <button style="user-select: none;" id="fight" class="bg-white text-black p-4 rounded-full shadow-md hover:bg-gray-200">
+    👊
+  </button>
+</div>
+
+  <!-- Script -->
+   
+  <script type="module" src="./script/main.js"></script>
+</body>
+</html>

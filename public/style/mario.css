@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    button, #left, #right, #jump, #fight {
+  user-select: none;       /* Empêche la sélection du texte */
+  -webkit-user-select: none; /* Compatibilité iOS */
+  -ms-user-select: none;
+  touch-action: manipulation; /* Empêche le zoom double-tap et le scroll sur mobile */
+}
+
+
+.gamePlate{
+   
+    height: 60vh;
+    padding: 70px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    
+}
+    
+}
+
+
+
+@media (max-width: 900px){
+.gamePlate{
+   
+    height: 60vh;
+    padding: 10px;
+    margin-top: 10px;
+}
+h1{
+    left: 40%;
+   
+    position: absolute;
+    color: rgb(227, 227, 2);
+}
+header{
+    margin: 0;
+}
+
+}

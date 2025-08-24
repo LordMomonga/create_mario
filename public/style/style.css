@@ -1,0 +1,357 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Play";
+
+}
+a{
+    text-decoration: none;
+    
+}
+@media screen and (min-width: 768px) {
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding-inline: 100px;
+    border-bottom: 1px rgba(128, 128, 128, 0.331) solid;
+
+}
+    .logo{
+    font-size: 45px;
+    color: blueviolet;
+    font-family: "Play", serif;
+    position: relative;
+}
+.logo span{
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+
+}
+.hero{
+   
+     padding-inline: 100px;
+ text-align: center;
+ padding-top: 30px;
+   height: 42vh;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.hero_left{
+    padding-top: 20px;
+    width: 35%;
+    text-align: left;
+    
+    
+}
+.hero_left button{
+    
+   padding: 10px;
+   background-color: blueviolet;
+   color: white;
+   display: block;
+   cursor: pointer;
+   border: none;
+   border-radius: 10px;
+   font-size: 17px;
+   font-weight: bold;
+   margin-top: 50px;
+   padding-inline: 50px;
+    
+}
+.hero_left button:hover{
+    transform: translateX(10%);
+    border: 1px solid rgba(128, 128, 128, 0.361);
+    background-color: white;
+    color: gray;
+   transition: 0.3s ease-in-out;
+}
+.hero_left span{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+
+}
+.hero_left span div{
+    font-size: 20px;
+    
+    font-weight: bolder;
+    display: inline;
+
+
+}
+.cont{
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.hero_right img{
+ height: 380px;
+
+    width: 380px;
+}
+.project{
+    height: 30vh;
+    margin-inline: 100px;
+    margin-top: 25px;
+    padding-top: 30px;
+    text-align: center;
+}
+.mini{
+    width: 270px;
+    height: 250px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ccc;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    padding-inline: 20px;
+   
+}
+.portrait{
+    border-radius: 10px;
+    height: 130px;
+    background-image: url(./assets/images/marioworld.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 15px 15px 20px gray;
+}
+.features{
+    margin-top: 25px;
+  
+    
+}
+.mini h3{
+    margin: 10px;
+    color: blueviolet;
+}
+.ecriture{
+    display: flex;
+    justify-content: space-between;
+}
+.icon img{
+    width: 25px;
+    cursor: pointer;
+}
+.icon img:hover{
+    transition: 0.2s ease-in-out;
+transform: translateY(-20%);
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+}
+.ecriture button{
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.ecriture button:hover{
+     transform: translateX(10%);
+      background-color: white;
+    color: gray;
+    border: 1px rgba(137, 43, 226, 0.534) solid;
+}
+.project h1{
+    font-weight: bold;
+    border-bottom:  1px solid #eee;
+    color: rgb(89, 89, 89);
+}
+    
+}
+
+
+
+@media only screen and (max-width: 700px){
+      header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding-inline: 10px;
+    border-bottom: 1px rgba(128, 128, 128, 0.331) solid;
+
+}
+    .logo{
+    font-size: 28px;
+    color: blueviolet;
+    font-family: "Play", serif;
+    position: relative;
+}
+.hero{
+   
+     padding-inline: 10px;
+ text-align: center;
+ padding-top: 10px;
+ height: 37vh;
+       margin-bottom: 50px;
+
+ 
+   
+}
+.hero_left{
+    padding-top: 20px;
+  
+    text-align: left;
+    
+    
+}
+.hero_left button{
+    
+   padding: 7px;
+   background-color: blueviolet;
+   color: white;
+   display: block;
+   cursor: pointer;
+   border: none;
+   border-radius: 10px;
+   font-size: 15px;
+   font-weight: bold;
+   margin-top: 20px;
+   padding-inline: 25px;
+    
+}
+.hero_left button:hover{
+    transform: translateX(10%);
+    border: 1px solid rgba(128, 128, 128, 0.361);
+    background-color: white;
+    color: gray;
+   transition: 0.3s ease-in-out;
+}
+.hero_left span{
+    font-size: 30px;
+    font-weight: bold;
+    color: blueviolet;
+
+}
+.hero_left span div{
+    font-size: 20px;
+    
+    font-weight: bolder;
+    display: inline;
+
+
+}
+
+    .hero_right img{
+ visibility: hidden;
+ 
+}
+.icon img{
+    width: 14px;
+    cursor: pointer;
+}
+.icon img:hover{
+    transition: 0.2s ease-in-out;
+transform: translateY(-20%);
+}
+.join{
+    visibility: hidden;
+}
+.social{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+}
+.icon{
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+}
+.cont{
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.project{
+    height: 50vh;
+  
+    display: block;
+    justify-content: center;
+
+    margin-top: 35px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+.mini{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ccc;
+    border-radius: 5px;
+   display: inline-block;
+    padding-inline: 20px;
+   
+}
+.portrait{
+    border-radius: 10px;
+    height: 130px;
+    background-image: url(marioworld.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 15px 15px 20px gray;
+}
+.features{
+    margin-top: 50px;
+    
+  
+    
+}
+.mini h3{
+    margin: 8px;
+    color: blueviolet;
+}
+.ecriture{
+    display: flex;
+    justify-content: space-between;
+}
+.ecriture button{
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.ecriture button:hover{
+     transform: translateX(10%);
+      background-color: white;
+    color: gray;
+    border: 1px rgba(137, 43, 226, 0.534) solid;
+}
+.project h1{
+    font-weight: bold;
+    border-bottom:  1px solid #eee;
+    color: rgb(89, 89, 89);
+}
+
+
+}
