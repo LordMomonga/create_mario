@@ -46,3 +46,40 @@ window.addEventListener("keyup", (event) => {
       break;
   }
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  // Ajoute tous les event listeners ici
+
+  
+document.getElementById("left").addEventListener("touchstart", () => {
+  key.a.pressed = true;
+});
+document.getElementById("left").addEventListener("touchend", () => {
+  key.a.pressed = false;
+});
+
+document.getElementById("right").addEventListener("touchstart", () => {
+  key.d.pressed = true;
+});
+document.getElementById("right").addEventListener("touchend", () => {
+  key.d.pressed = false;
+});
+
+document.getElementById("jump").addEventListener("touchstart", () => {
+ key.w.pressed= true;
+
+});
+document.getElementById("jump").addEventListener("touchend", () => {
+ key.w.pressed= false;
+
+});
+
+
+document.getElementById("fight").addEventListener("touchstart", () => {
+  key.p.pressed = true;
+});
+document.getElementById("fight").addEventListener("touchend", () => {
+  key.p.pressed = false;
+});
+});
+
